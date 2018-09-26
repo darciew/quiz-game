@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alpaca Quiz of Dreams: Questions</title>
+  </head>
+  <body>
+    <h1>Multiple Choice Alpaca Quiz</h1>
+    <form>
+    <h3><%= @questions[0][:question] %></h3>
+    <input type="radio" value="1" name="How many toes do Alpacas have on each foot"/><%= "#{@questions[0][:options][0]}" %><br>
+    <input type="radio" value="2" name="How many toes do Alpacas have on each foot"/><%= "#{@questions[0][:options][1]}" %><br>
+    <input type="radio" value="3" name="How many toes do Alpacas have on each foot"/><%= "#{@questions[0][:options][2]}" %><br>
+    <input type="radio" value="4" name="4How many toes do Alpacas have on each foot"/><%= "#{@questions[0][:options][3]}" %><br>
+    <button type="submit" value="submit" name="submit">Submit</button>
+
+    <h3><%= @questions[1][:question] %></h3>
+    <input type="radio" value="5-10 years" name="How long do Alpacas live?" /><%= "#{@questions[1][:options][0]}" %><br>
+    <input type="radio" value="10-15 years" name="How long do Alpacas live?" /><%= "#{@questions[1][:options][1]}" %><br>
+    <input type="radio" value="15-20 years" name="How long do Alpacas live?" /><%= "#{@questions[1][:options][2]}" %><br>
+    <input type="radio" value="20-25 years" name="How long do Alpacas live?" /><%= "#{@questions[1][:options][3]}" %><br>
+
+    <h3><%= @questions[2][:question] %></h3>
+    <input type="radio" value="Kit" name="What do you call a baby Alpaca?" /><%= "#{@questions[2][:options][0]}" %><br>
+    <input type="radio" value="Chick" name="What do you call a baby Alpaca?" /><%= "#{@questions[2][:options][1]}" %><br>
+    <input type="radio" value="Cria" name="What do you call a baby Alpaca?" /><%= "#{@questions[2][:options][2]}" %><br>
+    <input type="radio" value="Calf" name="What do you call a baby Alpaca?" /><%= "#{@questions[2][:options][3]}" %><br>
+    </form>
+
+  </body>
+</html>

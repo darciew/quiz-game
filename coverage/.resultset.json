@@ -1,6 +1,35 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/darciewalsh/Projects/quiz-game/spec/features/user_answers_quiz_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/darciewalsh/Projects/quiz-game/spec/features/user_views_quiz_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/darciewalsh/Projects/quiz-game/spec/features/welcome_spec.rb": [
         1,
         1,
@@ -8,8 +37,24 @@
         1,
         null,
         null
+      ],
+      "/Users/darciewalsh/Projects/quiz-game/spec/quiz_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1537866786
+    "timestamp": 1537965115
   }
 }
