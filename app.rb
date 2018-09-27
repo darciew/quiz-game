@@ -9,46 +9,17 @@ class QuizGame < Sinatra::Base
   end
 
   post '/questions' do
-    @questions = Quiz.questions
-    session[:questions] = @questions
+    session[:player_name] = params[:player_name]
     redirect '/questions'
   end
-
+  #
   get '/questions' do
-    @questions = session[:questions]
+    @player_name = session[:player_name]
+    @quiz = Quiz.new #Quiz.all
+    @question = @quiz.get_question #get ridof this
+    @rand_question = @question.sample #@quiz. sample
     erb :questions
   end
 
   run! if app_file == $0
 end
-
-
-
-
-
-
-#
-#
-# require 'sinatra/base'
-# require './lib/quiz'
-#
-# class QuizGame < Sinatra::Base
-#   enable :sessions
-#
-#   get '/' do
-#     erb :index
-#   end
-#
-#   post '/questions' do
-#     @questions = Quiz.new
-#     session[:questions] = @questions
-#     redirect '/questions'
-#   end
-#
-#   get '/questions' do
-#     @questions = session[:questions]
-#     erb :questions
-#   end
-#
-#   run! if app_file == $0
-# end

@@ -1,6 +1,8 @@
-feature 'Viewing the homepage' do
-  scenario 'A user can view the homepage' do
+feature 'Enter name' do
+  scenario 'A user can enter their name' do
     visit '/'
-    expect(page).to have_content "Welcome to the Alpaca Quiz"
+    fill_in :player_name, with: 'Bob'
+    click_button 'Enter'
+    expect(page).to have_content "Welcome Bob!"
   end
 end
